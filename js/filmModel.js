@@ -17,8 +17,3 @@ var filmModel=(function(){
         search:search
     }
 })();
-console.log(filmModel.search("e"));
-console.log(filmModel.films);
-
-// console.log(filmModel.search("e"));
-// console.log(filmModel.films);
