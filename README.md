@@ -1,9 +1,9 @@
 #Script Loading
 
-* Open index.html in a browser
+* Open *index.html* in a browser
 * Have a look at the JavaScript files. The application has been structured using modules.
 
-We are going to re-write this application so that is uses the webpack to bundle our modules
+We are going to re-write this application so that is uses webpack to bundle our modules
 
 ##Installing Webpack
 First we need to install webpack 
@@ -13,10 +13,10 @@ First we need to install webpack
 npm install webpack@v1.13 -g 
 ```  
 
-We have to use Version 1 because of the node version installed at the university 
+We have to use Version 1 because of the node version installed at the university. If you are doing this at home, its better to use version 2.  
 
 ##Re-writing the modules to use a CommonJS style 
-* Re-write filmModel.js and filmSearchApp.js so that they use the CommonJS style of module definition (https://webpack.github.io/docs/commonjs.html).
+* Re-write *filmModel.js* and *filmSearchApp.js* so that they use the CommonJS style of module definition (https://webpack.github.io/docs/commonjs.html).
 
 Here's filmModel.js
 ```
@@ -88,12 +88,12 @@ init();
 ```
 
 ##Compile the Modules 
-Enter the following to compile into a single JavaScript file
+Enter the following to compile the modules into a single JavaScript file
 ```
 webpack js/filmSearchApp.js bundle.js
 ```
-* Open budle.js in a text editor. 
-* Make changes to index.html so that it loads bundle.js instead of filmModel.js and filmsSearchApp.js
+* Open *bundle.js* in a text editor. Note how the two modules have been combined into one file. Note, this uses ES5 code. 
+* Make changes to *index.html* so that it loads *bundle.js* instead of *filmModel.js* and *filmsSearchApp.js*
 
 There is a lot more to webpack see - http://webpack.github.io/
 
